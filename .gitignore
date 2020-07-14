@@ -1,0 +1,11 @@
+db.sqllite3
+*.idea
+*.sqlite3
+*pyc
+.DS_Store
+media
+.env
+tabelas.png
+*.dot
+!/frontend/templates
+*.docx
