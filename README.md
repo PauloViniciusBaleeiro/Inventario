@@ -93,6 +93,6 @@ Você deve ver um template incial informando que o Django está rodando.
 Agora digite, no seu navegador:
 > localhost:8000/admin
 
-Você terá acesso à adminastração da aplicação, na qual, com as credenciais criadas pelo comando 'createsuperuser' terá acesso às funções criadas no site.
+Você terá acesso à administração da aplicação, na qual, com as credenciais criadas pelo comando 'createsuperuser' terá acesso às funções criadas no site.
 
 Por enquanto é isso. A seguir procederemos com o desenvolvimento da aplicação.
