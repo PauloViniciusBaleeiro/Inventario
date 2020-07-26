@@ -1,0 +1,34 @@
+Comando para instalar a imagem docker do portainer:
+$ sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /home/paulo/Desenvolvimento/Portainer/data:/data portainer/portainer
+# Formatado
+sudo docker run -d /
+    -p 9000:9000
+    --name portainer
+    --restart always
+    -v /var/run/docker.sock:/var/run/docker.sock
+    -v /home/paulo/Desenvolvimento/Portainer/data:/data
+    portainer/portainer
+
+user/pass portainer: admin  paulo14102014
+
+Executar pgadmin no docker com as configurações abaixo:
+
+docker run -p 80:80 --net redeinterna -e 'PGADMIN_DEFAULT_EMAIL='pauloviniciusbf@gmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=pv14102014' -e 'PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True' -e 'PGADMIN_CONFIG_LOGIN_BANNER="Authorised users only!"' -e 'PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10' -d dpage/pgadmin4
+# Exibição do comando acima, formatado
+docker run -p 80:80 --net redeinterna
+    -e 'PGADMIN_DEFAULT_EMAIL='pauloviniciusbf@gmail.com \
+    -e 'PGADMIN_DEFAULT_PASSWORD=pv14102014' \
+    -e 'PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True' \
+    -e 'PGADMIN_CONFIG_LOGIN_BANNER="Authorised users only!"' \
+    -e 'PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10' \
+    -d dpage/pgadmin4
+
+Comando para subir o PostgreSQL no docker
+docker run --name postgres --net redeinterna -e "POSTGRES_PASSWORD=Pv@14102014" -p 5432:5432 -v /home/paulo/Desenvolvimento/PostgreSQL:/var/lib/postgresql/data -d postgres
+docker run
+    --name postgres
+    --net redeinterna
+    -e "POSTGRES_PASSWORD=Pv@14102014"
+    -p 5432:5432
+    -v /home/paulo/Desenvolvimento/PostgreSQL:/var/lib/postgresql/data
+    -d postgres
